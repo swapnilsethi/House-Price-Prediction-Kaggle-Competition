@@ -2,7 +2,7 @@
 
 ## Content
 
-- [Personal Goal](###-Personal-Goal)
+- [Personal Goal](#Personal-Goal)
 - Problem Statement
 - Dataset
 - Exploratory Data Analysis
