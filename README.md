@@ -3,9 +3,9 @@
 ## Content
 
 - [Personal Goal](#Personal-Goal)
-- Problem Statement
-- Dataset
-- Exploratory Data Analysis
+- [Problem Statement](#Problem-Statement)
+- [Dataset](#Dataset)
+- [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - Feature Enginnering
 - Feature Selection
 - Predications using Random Forest Model with hyperparameter tuning
@@ -29,16 +29,24 @@ Predict houses sales price using suitable machine learning model. This is a Kagg
 
 There are total 79 features in dataset which describe every aspect of residential homes in Ames, Iowa. 
 
-### Exploratory Data Analysis 
+### Exploratory Data Analysis (Code)
 
-1. Went through features and tried to understand them logically
+1. Tried to understand features logically
 2. Looked for null values and calculated their percentages presence.
-3. Tried to understand relationship between null values and dependent variable (SalePrice)
-4. Explored on numerical features
-5. Have explored on temporal features and their relationship with dependent variable (SalePrice)
+3. Understand relationship between null values and dependent variable (SalePrice)
+4. Explored on numerical features.
+5. Explored on temporal features and understood their relationship with dependent variable (SalePrice)
    Findings: 1. Data is available for houses sold between 2006 and 2010.
              2. Some of the houses are too old (built in 1872, and so on)
              3. House Sale Price is in negative correlation with yearsold.
-             4. Hose prices are decreasing as per house age increases. 
+             4. Hose prices are decreasing as house age increases.
+6. Explored and tried to understand relationship between rest numerical feature with Pairplot and correlation Matrix (Have used Heatmap to visualize it).
+7. Explored and tried to understand relationship between discrete features and dependent variable(SalePrice) using Bar chart.
+8. Explored and tried to understand distribution of continuous features using Histogram.
+9. Desiged box plots to understand outliers in each continuous feature.
+   Findings: 1. There are no outliers in dependent variable (SalePrice)
+             2. There are many outliers in features, I will deal with them in feature engineering section.
+9. Have explored and tried to understand categorical features. Tried to understand relationship between in each sub-category in feature/catrgory with dependent variable(SalePrice).
+   
 
 
