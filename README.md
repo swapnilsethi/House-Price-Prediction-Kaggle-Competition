@@ -2,7 +2,7 @@
 
 ## Content
 
-- Personal Goal
+- [Personal Goal](###Personal-Goal)
 - Problem Statement
 - Dataset
 - Exploratory Data Analysis
@@ -15,7 +15,7 @@
 - Bibliography
 
 
-### Personal Goal 
+### Personal Goal
 
 This is my first project into predicative data science. The goal of this project is to learn about the data science project lifecycle, feature engineering and feature selection concepts, model design, hyperparameter tuning using cross validation methodologies, and so on.
 
