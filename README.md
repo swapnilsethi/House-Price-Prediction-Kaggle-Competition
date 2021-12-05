@@ -28,9 +28,9 @@ Predict houses sales price using suitable machine learning model. This is a Kagg
 2 datasets are provided - [Train](https://github.com/swapnilsethi/Stat-5000/blob/main/train.csv) and [Test](https://github.com/swapnilsethi/Stat-5000/blob/main/test.csv)
 
 There are total 79 features in dataset which describe every aspect of residential homes in Ames, Iowa. 
-All features are expalined in this [data_description](https://github.com/swapnilsethi/Stat-5000/blob/main/data_description.txt)file.
+All features are expalined in this [data_description](https://github.com/swapnilsethi/Stat-5000/blob/main/data_description.txt) file.
 
-### Exploratory Data Analysis (Code)
+### Exploratory Data Analysis ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/House_Price_Predication_EDA.ipynb))
 
 1. Tried to understand features logically
 2. Looked for null values and calculated their percentages presence.
