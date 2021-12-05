@@ -28,6 +28,7 @@ Predict houses sales price using suitable machine learning model. This is a Kagg
 2 datasets are provided - [Train](https://github.com/swapnilsethi/Stat-5000/blob/main/train.csv) and [Test](https://github.com/swapnilsethi/Stat-5000/blob/main/test.csv)
 
 There are total 79 features in dataset which describe every aspect of residential homes in Ames, Iowa. 
+All features are expalined in this [data_description](https://github.com/swapnilsethi/Stat-5000/blob/main/data_description.txt)file.
 
 ### Exploratory Data Analysis (Code)
 
@@ -40,7 +41,7 @@ There are total 79 features in dataset which describe every aspect of residentia
              2. Some of the houses are too old (built in 1872, and so on)
              3. House Sale Price is in negative correlation with yearsold.
              4. Hose prices are decreasing as house age increases.
-6. Explored and tried to understand relationship between rest numerical feature with Pairplot and correlation Matrix (Have used Heatmap to visualize it).
+6. Explored and tried to understand relationship between rest numerical feature with [Pairplot](https://github.com/swapnilsethi/Stat-5000/blob/main/Pairplot.png) and correlation Matrix (Have used [Heatmap](https://github.com/swapnilsethi/Stat-5000/blob/main/Cormat.png) to visualize it).
 7. Explored and tried to understand relationship between discrete features and dependent variable(SalePrice) using Bar chart.
 8. Explored and tried to understand distribution of continuous features using Histogram.
 9. Desiged box plots to understand outliers in each continuous feature.
