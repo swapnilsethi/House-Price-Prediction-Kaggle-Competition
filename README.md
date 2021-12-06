@@ -49,5 +49,21 @@ All features are expalined in this [data_description](https://github.com/swapnil
              2. There are many outliers in features, I will deal with them in feature engineering section.
 9. Have explored and tried to understand categorical features. Tried to understand relationship between in each sub-category in feature/catrgory with dependent variable(SalePrice).
    
+### Feature Engineering ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Engg.ipynb))
 
-
+1. Combined Train and Test dataset to perform common operations
+2. Removed columns having more than 80% null values
+3. Handled null values in categorical features
+            1. Replaced with 'missing' label and checked accuracy of model
+            2. Replaced with mode value of respective features and checked accuracy of model
+            finding:  Gained acccuracy of 85% through model 1 and 75.6% through model 2.
+4. Handled null values in numerical features
+            1. Replaced all values with median values
+            Future Scope - Examine each feature to see if replacing it with 0 or another value is preferable rather than median values.
+5. Have calculated age of house, duration from last modification, etc. and have dropped actual year columns. (Except house sold year) 
+6. Have replaced all uncomman sub-categories in categorical features with 'rare_val' label
+7. Have converted all categorical values with numerical values.
+            1. Have performed target encoding.
+            Future Scope-  There are many ways to do this like one One Hot Enconding, Dummy Encoding, Effect Encoding, Hash Encoding, etc. 
+                           Try with them and analyze model accuracy.
+8. Seperated Training and Target datasets and generated CSV files. ([X_train.csv](https://github.com/swapnilsethi/Stat-5000/blob/main/X_train.csv), [X_Test.csv](https://github.com/swapnilsethi/Stat-5000/blob/main/X_test.csv))
