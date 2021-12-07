@@ -8,8 +8,8 @@
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Feature Enginnering](#Feature-Engineering)
 - [Feature Selection](#Feature-Selection)
-- [Predications using Random Forest Model with hyperparameter tuning](#Predications-using-Random-Forest-Model-with-hyperparameter-tuning)
-- [Predications using XGBoost Model with hyperparameter tuning](#Predications-using-XGBoost-Model-with-Hyperparameter-tuning)
+- [Predictions using Random Forest Model with hyperparameter tuning](#Predictions-using-Random-Forest-Model-with-hyperparameter-tuning)
+- [Predictions using XGBoost Model with hyperparameter tuning](#Predictions-using-XGBoost-Model-with-hyperparameter-tuning)
 - [Conclusion](#Conclusion)
 - [Future Scope](#Future-Scope) 
 - [Bibliography](#Bibliography)
@@ -21,7 +21,7 @@ This is my first project into the world of predictive data science. The purpose 
 
 ### Problem Statement 
 
-Predict sale price of a houses using a machine learning model. This is a Kaggle [compitation](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) question. 
+Predict sale price of a houses using a machine learning model. This is a Kaggle [competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) question. 
 
 ### Dataset 
 
@@ -71,10 +71,10 @@ All features are expalined in this [data_description](https://github.com/swapnil
    - Future Scope:  There are many ways to do this like one One Hot Enconding, Dummy Encoding, Effect Encoding, Hash Encoding, etc. Will try with them and analyze model accuracy.
 8. Seperated Training and Target datasets and generated CSV files. ([X_train.csv](https://github.com/swapnilsethi/Stat-5000/blob/main/X_train.csv), [X_Test.csv](https://github.com/swapnilsethi/Stat-5000/blob/main/X_test.csv))
 
-### Feature Selection
-Have performed but didn't worked well. Still exploring.
+### Feature Selection([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Selection_with_RF.ipynb))
+Have tried but didn't worked well. Still exploring.
 
-### Predications using Random Forest Model with hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/RF_Model_and_Predictions.ipynb))
+### Predictions using Random Forest Model with hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/RF_Model_and_Predictions.ipynb))
 
 1. Divided training dataset in two sections (X_train, X_test)
 2. Designed Base model with 100 decision trees and calculated RMSE. Achieved RMSE of 0.1398.
@@ -83,7 +83,7 @@ Have performed but didn't worked well. Still exploring.
 5. To avoid overfitting, performed hyper parameter tweaking using the Random Search method with K-fold cross validation.
 6. Performed Grid Search with K-fold cross validation. Due to the small dataset, the accuracy was the same as Random Search.
 
-### Predications using XGBoost Model with Hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Model_with_XGBoost.ipynb))
+### Predictions using XGBoost Model with hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Model_with_XGBoost.ipynb))
 
 1. Separated the training dataset into two parts (X_train and X_test).
 2. Created a base model with default parameters and estimated the root mean square error. The RMSE was 0.1380. 
