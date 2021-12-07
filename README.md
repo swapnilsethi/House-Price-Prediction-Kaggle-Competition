@@ -17,11 +17,11 @@
 
 ### Personal Goal
 
-This is my first project into predicative data science. The goal of this project is to learn about the data science project lifecycle, feature engineering and feature selection concepts, model design, hyperparameter tuning using cross validation methodologies, and so on.
+This is my first project into the world of predictive data science. The purpose of this project is to gain knowledge of the data science project lifecycle, feature engineering and feature selection ideas, model construction, hyperparameter tuning using cross validation approaches, and so on.
 
 ### Problem Statement 
 
-Predict houses sales price using suitable machine learning model. This is a Kaggle [compitation](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) question. 
+Predict sale price of a houses using a machine learning model. This is a Kaggle [compitation](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) question. 
 
 ### Dataset 
 
@@ -32,40 +32,40 @@ All features are expalined in this [data_description](https://github.com/swapnil
 
 ### Exploratory Data Analysis ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/House_Price_Predication_EDA.ipynb))
 
-1. Tried to understand features logically
-2. Looked for null values and calculated their percentages presence.
+1. I attempted to comprehend aspects in a rational manner.
+2. Determined the presence of null values by calculating their percentages.
 3. Understand relationship between null values and dependent variable (SalePrice)
-4. Explored on numerical features.
+4. Investigated numerical features.
 5. Explored on temporal features and understood their relationship with dependent variable (SalePrice)
    
    Findings: 
-   - Data is available for houses sold between 2006 and 2010.
+   - Data for houses sold between 2006 and 2010 is available.
    - Some of the houses are too old (built in 1872, and so on)
    - House Sale Price is in negative correlation with yearsold.
-   - Hose prices are decreasing as house age increases.
-6. Explored and tried to understand relationship between rest numerical feature with [Pairplot](https://github.com/swapnilsethi/Stat-5000/blob/main/Pairplot.png) and correlation Matrix (Have used [Heatmap](https://github.com/swapnilsethi/Stat-5000/blob/main/Cormat.png) to visualize it).
-7. Explored and tried to understand relationship between discrete features and dependent variable(SalePrice) using Bar chart.
-8. Explored and tried to understand distribution of continuous features using Histogram.
-9. Desiged box plots to understand outliers in each continuous feature.
+   - As a house gets older, the cost of a hose decreases.
+6. Using [Pairplot](https://github.com/swapnilsethi/Stat-5000/blob/main/Pairplot.png) and correlation Matrix (Have used [Heatmap](https://github.com/swapnilsethi/Stat-5000/blob/main/Cormat.png) to visualize it), I explored and attempted to identify the link between the remainder numerical features.
+7. Using a bar chart, I explored and attempted to comprehend the link between discrete attributes and the dependent variable (SalePrice).
+8. Using a histogram, I explored and attempted to comprehend the distribution of continuous features.
+9. Created box plots to visualize outliers in each continuous feature
    
    Findings: 
    - There are no outliers in dependent variable (SalePrice)
-   - here are many outliers in features, I will deal with them in feature engineering section.
-10. Have explored and tried to understand categorical features. Tried to understand relationship between in each sub-category in feature/catrgory with dependent variable(SalePrice).
+   - There are several outliers in the features, which I will address in the feature engineering section.
+10. Have investigated and attempted to comprehend categorical features. I tried to figure out what the relationship was between each sub-category in each feature/category and the dependent variable (SalePrice).
    
 ### Feature Engineering ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Engg.ipynb))
 
-1. Combined Train and Test dataset to perform common operations
-2. Removed columns having more than 80% null values
+1. To conduct common operations, combined the Train and Test datasets.
+2. Columns with more than 80% null values are removed.
 3. Handled null values in categorical features 
    - Replaced with 'missing' label and checked accuracy of model
    - Replaced with mode value of respective features and checked accuracy of model
-   - finding:  Gained acccuracy of 85% through model 1 and 75.6% through model 2.
+   - finding:  Gained accuracy of 85% through model 1 and 75.6% through model 2.
 4. Handled null values in numerical features
    - Replaced all values with median values
-   - Future Scope: Examine each feature to see if replacing it with 0 or another value is preferable rather than median values.
+   - In the future, I'll Examine each characteristic to see if replacing it with 0 or another value, rather than median values, is desirable or not.
 5. Have calculated age of house, duration from last modification, etc. and have dropped actual year columns. (Except house sold year) 
-6. Have replaced all uncomman sub-categories in categorical features with 'rare_val' label
+6. Have replaced all uncommon sub-categories in categorical features with 'rare_val' label
 7. Have converted all categorical values with numerical values.
    - Have performed target encoding.
    - Future Scope:  There are many ways to do this like one One Hot Enconding, Dummy Encoding, Effect Encoding, Hash Encoding, etc. Will try with them and analyze model accuracy.
@@ -76,24 +76,24 @@ Have performed but didn't worked well. Still exploring.
 
 ### Predications using Random Forest Model with hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/RF_Model_and_Predictions.ipynb))
 
-1. Divided training dataset in two section (X_train, X_test)
+1. Divided training dataset in two sections (X_train, X_test)
 2. Designed Base model with 100 decision trees and calculated RMSE. Achieved RMSE of 0.1398.
-3. Plotted single decision tree with then help of Graphviz to understand what happeing under the hood! ([Article Link](https://towardsdatascience.com/visualizing-decision-trees-with-python-scikit-learn-graphviz-matplotlib-1c50b4aa68dc))  
+3. Using Graphviz, I plotted a single decision tree to see what was going on underneath the hood! ([Article Link](https://towardsdatascience.com/visualizing-decision-trees-with-python-scikit-learn-graphviz-matplotlib-1c50b4aa68dc))  
 4. Predicated Sales Price of actual Test houses and uploaded solution on Kaggle. Got 0.14916 RMSE (Rank- 2820)
-5. Performed hyper parameter tuning using Random Search method with K-fold cross validation to avoid overfitting issue. 
-6. Performed Grid Search with K-fold cross validation. Got same accuracy as Random Search due to small dataset. 
+5. To avoid overfitting, performed hyper parameter tweaking using the Random Search method with K-fold cross validation.
+6. Performed Grid Search with K-fold cross validation. Due to the small dataset, the accuracy was the same as Random Search.
 
 ### Predications using XGBoost Model with Hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Model_with_XGBoost.ipynb))
 
-1. Divided training dataset in two section (X_train, X_test)
-2. Desinged base model with default parameters and calculated RMSE. Achived RMSE of 0.1380. 
-3. Predicated Sales Price of Actual Test houses and uploaded solution on Kaggle. Got 0.13354 RMSE (Rank- 1678)
-4. Performed hyper parameter tuning using Random Search method. Got same RMSE.
+1. Separated the training dataset into two parts (X_train and X_test).
+2. Created a base model with default parameters and estimated the root mean square error. The RMSE was 0.1380. 
+3. Predicted Sales Price of Actual Test Houses, published solution to Kaggle. Achived RMSE of 0.13354. (Rank- 1678)
+4. Used the Random Search method to tune hyperparameters. The RMSE is same.
 
 ### Conclusion
-1. Due to small dataset hyper parameter tuning doesn't help to improve peformace of model
-2. XGBoost worked well in this case as it combines results along the way rather than combining results at the end of the process (by averaging or "majority rules") like Random Forest
-3. Boosing algoritms redudes bias (amd in some extent variance as well) but RF model works by reducing variance. In my case, I data had both high variance and high bias hence Boosting model worked well than the RF model.
+1. Due to the small dataset, hyper parameter adjustment is ineffective in improving model performance. 
+2. In this scenario, XGBoost performed well because it combines results along the way rather than at the conclusion of the process (through averaging or "majority rules"), as Random Forest.
+3.  Boosting algorithms reduce bias (and to a lesser extent variance), whereas the RF model reduces variance. Because my data had both high variance and significant bias, the boosting model performed better than the RF model.
 
 ### Bibliography
 
@@ -113,6 +113,9 @@ Have performed but didn't worked well. Still exploring.
 14. [HyperParameter Tuning with RF](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
 15. [Feature Selection usinh Random Forest](https://towardsdatascience.com/feature-selection-using-random-forest-26d7b747597f)
 16. [Datacamp XGBoost Tutorial](https://www.datacamp.com/community/tutorials/xgboost-in-python)
-17. [XGBoost Feature Importance](https://mljar.com/blog/feature-importance-xgboost/)
-18. [Github Syntax Documentation](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#section-links)
-19. [Stackoverflow](https://stackoverflow.com)(For every small issue faced in coding)
+17. [XGBoost Documentation](https://xgboost.readthedocs.io/en/latest/parameter.html#general-parameters)
+18. [HyperParameter Tuning with XGBoost](https://towardsdatascience.com/xgboost-fine-tune-and-optimize-your-model-23d996fab663)
+19. [XGBoost Feature Importance](https://mljar.com/blog/feature-importance-xgboost/)
+20. [Seaborn](https://seaborn.pydata.org/index.html), [Pandas](https://pandas.pydata.org/docs/user_guide/index.html), [Numpy](https://numpy.org/doc/1.21/user/basics.html), [Matplotlib](https://matplotlib.org/stable/plot_types/index) Documentation
+21. [Github Syntax Documentation](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#section-links)
+22. [Stackoverflow](https://stackoverflow.com)(For every small issue faced in coding)
