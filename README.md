@@ -30,7 +30,8 @@ Predict sale price of a houses using a machine learning model. This is a Kaggle 
 There are total 79 features in dataset which describe every aspect of residential homes in Ames, Iowa. 
 All features are expalined in this [data_description](https://github.com/swapnilsethi/Stat-5000/blob/main/data_description.txt) file.
 
-### Exploratory Data Analysis ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/House_Price_Predication_EDA.ipynb))
+### Exploratory Data Analysis 
+([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/House_Price_Predication_EDA.ipynb))
 
 1. I attempted to comprehend aspects in a rational manner.
 2. Determined the presence of null values by calculating their percentages.
@@ -53,7 +54,8 @@ All features are expalined in this [data_description](https://github.com/swapnil
    - There are several outliers in the features, which I will address in the feature engineering section.
 10. Have investigated and attempted to comprehend categorical features. I tried to figure out what the relationship was between each sub-category in each feature/category and the dependent variable (SalePrice).
    
-### Feature Engineering ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Engg.ipynb))
+### Feature Engineering 
+([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Engg.ipynb))
 
 1. To conduct common operations, combined the Train and Test datasets.
 2. Columns with more than 80% null values are removed.
@@ -74,7 +76,8 @@ All features are expalined in this [data_description](https://github.com/swapnil
 ### Feature Selection ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Selection_with_RF.ipynb))
 Have tried but didn't worked well. Still exploring.
 
-### Predictions using Random Forest Model with hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/RF_Model_and_Predictions.ipynb))
+### Predictions using Random Forest Model with hyperparameter tuning 
+([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/RF_Model_and_Predictions.ipynb))
 
 1. Divided training dataset in two sections (X_train, X_test)
 2. Designed Base model with 100 decision trees and calculated RMSE. Achieved RMSE of 0.1398.
@@ -83,7 +86,8 @@ Have tried but didn't worked well. Still exploring.
 5. To avoid overfitting, performed hyper parameter tweaking using the Random Search method with K-fold cross validation.
 6. Performed Grid Search with K-fold cross validation. Due to the small dataset, the accuracy was the same as Random Search.
 
-### Predictions using XGBoost Model with hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Model_with_XGBoost.ipynb))
+### Predictions using XGBoost Model with hyperparameter tuning 
+([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Model_with_XGBoost.ipynb))
 
 1. Separated the training dataset into two parts (X_train and X_test).
 2. Created a base model with default parameters and estimated the root mean square error. The RMSE was 0.1380. 
