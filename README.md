@@ -6,13 +6,13 @@
 - [Problem Statement](#Problem-Statement)
 - [Dataset](#Dataset)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
-- Feature Enginnering (#Feature-Engineering)
-- Feature Selection (#Feature-Selection)
-- Predications using Random Forest Model with hyperparameter tuning (#Predications-using-Random-Forest-Model-with-hyperparameter-tuning)
-- Predications using XGBoost Model with hyperparameter tuning (#Predications-using-XGBoost-Model-with-Hyperparameter-tuning)
-- Conclusion (#Conclusion)
-- Future Scope 
-- Bibliography
+- [Feature Enginnering](#Feature-Engineering)
+- [Feature Selection](#Feature-Selection)
+- [Predications using Random Forest Model with hyperparameter tuning](#Predications-using-Random-Forest-Model-with-hyperparameter-tuning)
+- [Predications using XGBoost Model with hyperparameter tuning](#Predications-using-XGBoost-Model-with-Hyperparameter-tuning)
+- [Conclusion](#Conclusion)
+- [Future Scope](#Future-Scope) 
+- [Bibliography](#Bibliography)
 
 
 ### Personal Goal
@@ -98,4 +98,11 @@ Have performed but didn't worked well. Still exploring.
 ### Bibliography
 
 1. [Kaggle Problem Statement](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview)
-2. 
+2. [Data Science Project lifecycle](https://medium.com/co-learning-lounge/complete-data-science-project-life-cycle-9eae6e4ed4c9)
+3. [Engineering Statistic Handbook](https://www.itl.nist.gov/div898/handbook/index.htm)(General Concepts in Analysis)
+4. [Fundamental Techniques of Feature Engineering](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
+5. [Feature Scaling](https://towardsdatascience.com/how-to-differentiate-between-scaling-normalization-and-log-transformations-69873d365a94)
+6. [Principle Component Analysis](https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c)
+7. [Scikit learn Supervised Learning Documentation](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
+8. [Decision Tree](https://towardsdatascience.com/decision-tree-ba64f977f7c3)
+9. [Geeks for Geeks ML concepts](https://www.geeksforgeeks.org/machine-learning/?ref=shm)
