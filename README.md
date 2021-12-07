@@ -6,7 +6,7 @@
 - [Problem Statement](#Problem-Statement)
 - [Dataset](#Dataset)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
-- [Feature Enginnering](#Feature-Engineering)
+- [Feature Engineering](#Feature-Engineering)
 - [Feature Selection](#Feature-Selection)
 - [Predictions using Random Forest Model with hyperparameter tuning](#Predictions-using-Random-Forest-Model-with-hyperparameter-tuning)
 - [Predictions using XGBoost Model with hyperparameter tuning](#Predictions-using-XGBoost-Model-with-hyperparameter-tuning)
@@ -71,7 +71,7 @@ All features are expalined in this [data_description](https://github.com/swapnil
    - Future Scope:  There are many ways to do this like one One Hot Enconding, Dummy Encoding, Effect Encoding, Hash Encoding, etc. Will try with them and analyze model accuracy.
 8. Seperated Training and Target datasets and generated CSV files. ([X_train.csv](https://github.com/swapnilsethi/Stat-5000/blob/main/X_train.csv), [X_Test.csv](https://github.com/swapnilsethi/Stat-5000/blob/main/X_test.csv))
 
-### Feature Selection([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Selection_with_RF.ipynb))
+### Feature Selection ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/Feature_Selection_with_RF.ipynb))
 Have tried but didn't worked well. Still exploring.
 
 ### Predictions using Random Forest Model with hyperparameter tuning ([Code](https://github.com/swapnilsethi/Stat-5000/blob/main/RF_Model_and_Predictions.ipynb))
