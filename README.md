@@ -82,7 +82,7 @@ All features are expalined in this [data_description](https://github.com/swapnil
 
 1. Divided training dataset in two sections (X_train, X_test)
 2. Designed Base model with 100 decision trees and calculated RMSE. Achieved RMSE of 0.1398.
-3. Using Graphviz, I plotted a single decision tree to see what was going on underneath the hood! ([Article Link](https://towardsdatascience.com/visualizing-decision-trees-with-python-scikit-learn-graphviz-matplotlib-1c50b4aa68dc))  
+3. Using Graphviz, I plotted a single [decision tree](https://github.com/swapnilsethi/Stat-5000/blob/main/DecisionTree.png) to see what was going on underneath the hood! ([Article Link](https://towardsdatascience.com/visualizing-decision-trees-with-python-scikit-learn-graphviz-matplotlib-1c50b4aa68dc))  
 4. Predicated Sales Price of actual Test houses and uploaded solution on Kaggle. Got 0.14916 RMSE (Rank- 2820)
 5. To avoid overfitting, performed hyper parameter tweaking using the Random Search method with K-fold cross validation.
 6. Performed Grid Search with K-fold cross validation. Due to the small dataset, the accuracy was the same as Random Search.
