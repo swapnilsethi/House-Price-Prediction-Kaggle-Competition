@@ -1,4 +1,4 @@
-# House Price Predication using Random Forest and XGBoost 
+# House Price Prediction using Random Forest and XGBoost 
 
 ## Content
 
