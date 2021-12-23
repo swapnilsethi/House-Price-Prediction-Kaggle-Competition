@@ -95,6 +95,12 @@ All features are expalined in this [data_description](https://github.com/swapnil
 3. Predicted Sales Price of Actual Test Houses, published solution to Kaggle. Achived RMSE of 0.13354. (Rank- 1678)
 4. Used the Random Search method to tune hyperparameters. The RMSE is same.
 
+### Detecting outliers with Mahalanobis distance and model training
+    Github file link - ([code](https://github.com/swapnilsethi/Stat-5000/blob/main/Mahalanobis_Distance.ipynb))
+1. Detected outliers using Mahalanobis distance
+2. Have trained two seperate models for outliers and non-outliers. 
+3. Achived RMSE of 0.13234 (Rank- 1667)
+
 ### Conclusion
 1. Due to the small dataset, hyper parameter adjustment is ineffective in improving model performance. 
 2. In this scenario, XGBoost performed well because it combines results along the way rather than at the conclusion of the process (through averaging or "majority rules"), as Random Forest.
