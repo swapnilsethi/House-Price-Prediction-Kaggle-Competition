@@ -10,6 +10,7 @@
 - [Feature Selection](#Feature-Selection)
 - [Predictions using Random Forest Model with hyperparameter tuning](#Predictions-using-Random-Forest-Model-with-hyperparameter-tuning)
 - [Predictions using XGBoost Model with hyperparameter tuning](#Predictions-using-XGBoost-Model-with-hyperparameter-tuning)
+- [Detecting outliers with Mahalanobis distance and model training](#Detecting-outliers-with-Mahalanobis-distance-and-model-training)
 - [Conclusion](#Conclusion)
 - [Future Scope](#Future-Scope) 
 - [Bibliography](#Bibliography)
@@ -96,7 +97,7 @@ All features are expalined in this [data_description](https://github.com/swapnil
 4. Used the Random Search method to tune hyperparameters. The RMSE is same.
 
 ### Detecting outliers with Mahalanobis distance and model training
-    Github file link - ([code](https://github.com/swapnilsethi/Stat-5000/blob/main/Mahalanobis_Distance.ipynb))
+   Github file link - ([code](https://github.com/swapnilsethi/Stat-5000/blob/main/Mahalanobis_Distance.ipynb))
 1. Detected outliers using Mahalanobis distance
 2. Have trained two seperate models for outliers and non-outliers. 
 3. Achived RMSE of 0.13234 (Rank- 1667)
